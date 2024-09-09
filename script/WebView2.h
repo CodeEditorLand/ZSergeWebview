@@ -6952,29 +6952,19 @@ EXTERN_C const IID IID_IWebView2CreateWebView2EnvironmentCompletedHandler;
 /* interface __MIDL_itf_webview2_0000_0050 */
 /* [local] */ 
 
-STDAPI CreateWebView2EnvironmentWithDetails(
-
-    PCWSTR browserExecutableFolder,
-
-    PCWSTR userDataFolder,
-
-    PCWSTR additionalBrowserArguments,
-
+STDAPI CreateWebView2EnvironmentWithDetails(
+    PCWSTR browserExecutableFolder,
+    PCWSTR userDataFolder,
+    PCWSTR additionalBrowserArguments,
     IWebView2CreateWebView2EnvironmentCompletedHandler* environment_created_handler);
-STDAPI CreateWebView2Environment(
-
+STDAPI CreateWebView2Environment(
     IWebView2CreateWebView2EnvironmentCompletedHandler* environment_created_handler);
-STDAPI GetWebView2BrowserVersionInfo(
-
-    PCWSTR browserExecutableFolder,
-
+STDAPI GetWebView2BrowserVersionInfo(
+    PCWSTR browserExecutableFolder,
     LPWSTR* versionInfo);
-STDAPI CompareBrowserVersions(
-
-    PCWSTR version1,
-
-    PCWSTR version2,
-
+STDAPI CompareBrowserVersions(
+    PCWSTR version1,
+    PCWSTR version2,
     int* result);
 
 
